@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic');
+
 * {
   margin: 0;
   padding: 0;
@@ -181,11 +183,10 @@ form {
 /* Сверстайте текст */
 
 .article {
-
+  font-family: 'PT Sans', sans-serif;
 }
 
 .article h3 {
-  font-family: PTSans;
 color:  #333333;
 font-size: 24px;
 font-weight: 400;
