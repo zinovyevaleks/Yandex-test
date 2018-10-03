@@ -8,9 +8,187 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 1000px;
   height: 100rem;
   margin: 0 auto;
   background-color: #fff;
+  font-family: 'Helvetica';
+  padding-left: 24px;
+  padding-right: 24px;
+}
 
+h1 {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Рейтинг */
+
+.rating {
+  height: 20px;
+  width: 80px;
+}
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+.rating:not(:checked)>input {
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.rating:not(:checked)>label {
+  background: url('img/greyStar.png') no-repeat 0 0px;
+}
+
+.rating>input:checked~label {
+  width: 16px;
+  height: 16px;
+  background: url('img/goldStar.png') no-repeat 0 0px;
+}
+
+.rating:not(:checked)>label:hover,
+.rating>input:checked+label:hover,
+.rating>input:checked+label:hover~label,
+.rating>label:hover~input:checked~label,
+.rating:not(:checked)>label:hover~label {
+  background: url('img/goldStar.png') no-repeat 0 0px;
+}
+
+/* Прогресс-бар */
+.progress-bar {
+  width: 210px;
+  height: 13px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.29);
+  background-color: #ffffff;
+  background-color: #eeeeee;
+  border-radius: 14px;
+}
+
+.progress-bar-fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 13px;
+  background-color: #a4deff;
+  background-image: linear-gradient(to top, #28bf14 0%, #8bda1a 14%, #28bf14 49%, #abff58 100%);
+  border-radius: 14px;
+}
+
+.progress-bar-fill:before {
+  content: '20%';
+  font-family: Verdana;
+  font-size: 9px;
+  font-weight: 400;
+}
+
+/* Кнопка */
+.btn-class {
+  width: 80px;
+  height: 18px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  background: -webkit-linear-gradient(90deg, #e2e2e2 30%, #f2f2f2 70%);
+  background: -moz-linear-gradient(90deg, #e2e2e2 30%, #f2f2f2 70%);
+  background: -o-linear-gradient(90deg, #e2e2e2 30%, #f2f2f2 70%);
+  background: -ms-linear-gradient(90deg, #e2e2e2 30%, #f2f2f2 70%);
+  background: linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
+  font-family: Verdana;
+font-size: 11px;
+font-weight: 400;
+}
+
+.btn-class:hover,
+.btn-class:active {
+  cursor: pointer;
+}
+
+.btn-class:active {
+  box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-class:focus {
+  outline: none;
+}
+
+.link {
+  display: flex;
+justify-content: center;
+align-items: center;
+  text-decoration: none;
+  color: black;
+  font-family: Verdana;
+font-size: 11px;
+font-weight: 400;
+
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+}
+
+/* Список */
+
+.row {
+  width: 100%;
+}
+
+.chrome {
+  color: rgb(34, 161, 42);
+}
+
+.firefox {
+  color: rgb(242, 164, 20);
+}
+
+.opera {
+  color: rgb(255, 0, 0);
+}
+
+.safari {
+  color: rgb(141, 141, 143);
+}
+
+.explorer {
+  margin-left: 39%;
+  color: rgb(8, 143, 219);
+}
+
+/* Сверстайте текст */
+
+.article {
+
+}
+
+.article h3 {
+  font-family: PTSans;
+color:  #333333;
+font-size: 24px;
+font-weight: 400;
+line-height: 11px;
+text-align: left;
 }
