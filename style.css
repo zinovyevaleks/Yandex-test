@@ -11,7 +11,6 @@ body {
 
 .container {
   width: 1000px;
-  height: 100rem;
   margin: 0 auto;
   background-color: #fff;
   font-family: 'Helvetica';
@@ -33,12 +32,17 @@ p {
   margin-bottom: 20px;
 }
 
-/* Рейтинг */
+ul {
+  margin-left: 15px;
+      line-height: 2;
+}
 
+/* Рейтинг */
 .rating {
   height: 20px;
   width: 80px;
 }
+
 .rating input {
   display: none;
 }
@@ -117,8 +121,8 @@ p {
   background: -ms-linear-gradient(90deg, #e2e2e2 30%, #f2f2f2 70%);
   background: linear-gradient(0deg, #e2e2e2 30%, #f2f2f2 70%);
   font-family: Verdana;
-font-size: 11px;
-font-weight: 400;
+  font-size: 11px;
+  font-weight: 400;
 }
 
 .btn-class:hover,
@@ -136,14 +140,13 @@ font-weight: 400;
 
 .link {
   display: flex;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: black;
   font-family: Verdana;
-font-size: 11px;
-font-weight: 400;
-
+  font-size: 11px;
+  font-weight: 400;
 }
 
 form {
@@ -154,8 +157,8 @@ form {
 }
 
 /* Список */
-
 .row {
+  display: flex;
   width: 100%;
 }
 
@@ -181,15 +184,49 @@ form {
 }
 
 /* Сверстайте текст */
-
 .article {
   font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
 }
 
 .article h3 {
-color:  #333333;
-font-size: 24px;
-font-weight: 400;
-line-height: 11px;
-text-align: left;
+  color: #333333;
+  font-size: 24px;
+  line-height: 22px;
+  text-align: left;
+  margin-bottom: 11px;
+}
+
+.article .col {
+  width: 374px;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 24px;
+  margin-right: 92px;
+}
+
+.article p {
+  text-indent: 15px;
+}
+
+.article ul {
+  list-style: none;
+  line-height: 20px;
+}
+
+.article li:before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 1px;
+  background-color: #858585;
+  margin-left: -30px;
+  margin-right: 5px;
+  position: relative;
+  top: -4px;
+}
+
+.article span {
+  color: #353434;
+  border-bottom: 1px dotted;
 }
